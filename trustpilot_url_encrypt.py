@@ -1,6 +1,6 @@
 import json
 from urllib.parse import quote as urlencode
-from trustpilot_authenticated_encryption import encrypt
+from trustpilot_authenticated_encryption.encryption import encrypt
 from config import Config
 
 
