@@ -1,0 +1,14 @@
+# credentials for you customer account in Trustpilot
+trustpilot:
+    encryption_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    hash_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    domain: as defined in trustpilot
+    url: https://www.trustpilot.com/evaluate-bgl/%s?p=%s
+
+# for Trustpilot we encypt the fields: name (first last), email and 
+#  an arbitraryreference. For each of those fields, we map the name
+# of the column in the csv file
+fields:
+    name: name
+    email: email_address§
+    ref: order_number
