@@ -12,14 +12,14 @@ for filename in sys.argv[1:]:
     input_file = filename
     output_file = filename.replace('.csv', '_links.csv')
     print('reading', input_file)
-    reader = CSVReader(input_file) #, encoding='utf-16')
+    reader = CSVReader(input_file)
     config = Config('config.yaml')
     writer = CSVWriter(output_file)
     # write the header only once in the output file
     write_header = True
     # go through the source csv
     for row in reader():
-        # build the record for trustpilot we get something like
+        # build the record for trust pilot we get something like
         record = {}
         for field in ('name', 'email', 'ref'):
             record[field] = row[config['fields'][field]]

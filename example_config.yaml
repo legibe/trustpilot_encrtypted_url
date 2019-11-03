@@ -1,3 +1,6 @@
+# This file should be called config.yaml and be in the same directory
+# as run.py
+#
 # credentials for you customer account in Trustpilot
 trustpilot:
     encryption_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
